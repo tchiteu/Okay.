@@ -1,7 +1,16 @@
-var http = require('http');
+const express = require("express");
+const app = express();
+var path = require('path');
 
-// console.log(testeFunc(4))
-http.createServer(function(req,res){
-    res.end("teste!");
-}).listen(8081);
-console.log('Ok!');
+app.use(express.static(__dirname));
+app.get("/", function(req, res){
+    res.send("Seja bem-vindo!");
+})
+
+app.get("/login", function(req, res){
+    res.sendFile(__dirname + "/html/index.html");
+})
+
+app.listen(8081, function(){
+    console.log('Servidor rodando.');
+})
