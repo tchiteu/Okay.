@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Okay.</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class='container-center'>
+        <form action="" method='POST' class='formulario flex'>
+            <label for="iNome">Nome Completo</label>
+            <input id="iNome" class="campo" type="password" placeholder="Ex. André Borges">
+
+            <label for="iEmail">E-mail</label>
+            <input id="iEmail" class="campo" type="text" placeholder="Ex. matheussantos@email.com">
+
+            <label for="iUser">Usuário</label>
+            <input id="iUser" class="campo" type="text" placeholder="Minímo 5 caracteres">
+            
+            <label for="iSenha">Senha</label>
+            <input id="iSenha" class="campo" type="password" placeholder="Minímo 6 caracteres">
+
+            <input id="iReSenha" class="campo" type="password" placeholder="Repita a sua senha">
+
+            <div class="flex">
+                <input type="checkbox" id="iTermos">
+                <label for="iTermos" class="checkbox">Aceito e concordo com todos os termos de uso.</label>
+            </div>
+
+            <input type="submit" value="Enviar">
+
+            <a href="/login">Faça login aqui.</a>
+        </form>
+    </div>
+</body>
+</html>
