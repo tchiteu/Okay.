@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Judson&display=swap');
 
 html, body {
     margin: 0;
@@ -8,6 +9,21 @@ body {
     background-color: #2a192b;
 }
 
+a {  
+    font-size: 12px;
+    align-self: flex-start;
+    text-decoration: none;
+    color: #F5B85C;
+}
+
+.logo {
+    font-family: 'Judson', serif;
+    font-size: 64px;
+    text-align: center;
+    color: #F5B85C;
+    margin: 0;
+}
+
 .flex {
     display: flex;
 }
@@ -15,13 +31,15 @@ body {
 .container-center {
     font-family: 'Roboto Mono', monospace;
     position: absolute;
-    top: 50%;
+    top: 57%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 400px;
+    border-radius: 3px;
     border-left: 4px solid #F5B85C;
     background: #221423;
     color: #F5B85C;
+    box-shadow: 0 0px 6px rgba(116, 116, 116, 0.274);
 }
 
 .formulario {
@@ -63,7 +81,7 @@ body {
 .rodape {
     font-family: 'Roboto Mono', monospace;
     width: 100%;
-    bottom: 10px;
+    bottom: 15px;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -74,9 +92,11 @@ body {
     justify-content: space-around;
     font-size: 12px;
 }
-a{  
-    font-size: 12px;
-    align-self: flex-start;
-    text-decoration: none;
-    color: #F5B85C;
+
+@media only screen and (max-width: 1000px) { 
+    .container-center {
+        width: 90%;
+        top: 56%;
+    }
+
 }
