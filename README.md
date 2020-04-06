@@ -1,2 +1,2 @@
 # Okay.
-Projeto microblogging.
+Projeto para estudos CSS/HTML.
